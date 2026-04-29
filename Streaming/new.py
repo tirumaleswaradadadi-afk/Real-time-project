@@ -119,7 +119,7 @@ def main(body: dict) -> dict:
     environment = body.get("ENVIRONMENT")
     incident_business_unit = body.get('INCIDENT_BUSINESS_UNIT') #"RBD", "RHC", "CCB". "Hard-Coded in Activity while invoking Function"
     blob_account_url = body.get('BLOB_ACCOUNT_URL') #"https://rhrhcbidev.blob.core.windows.net/". replace the storage name to rhrhcbidev or rhrbdbidev or rhccbbidev
-    subscription = body.get('SUBSCRIPTION') #"74F71200-AE14-486E-A4F2-8F16649FEDD5" is the subscription for RHC. "Hard-Coded in Activity while invoking Function"
+    subscription = body.get('SUBSCRIPTION') 
     container_name = body.get('CONTAINER_NAME') #"insights-logs-activityruns"
     blob_resource_group = body.get('BLOB_RESOURCE_GROUP') #"RHC-BI-DEV"
     blob_df_name = body.get('BLOB_RESOURCE_DF_NAME') #"RHC-BI-DEV" or "RHC-PI-DEV"
